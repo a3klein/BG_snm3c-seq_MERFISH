@@ -1,0 +1,12 @@
+{
+    "RUST_BIN_PATH": "/home/x-aklein2/.cargo/bin",
+    "VPT_BIN_PATH": "/home/x-aklein2/projects/aklein/miniconda3/envs/vpt/bin",
+    "DECONWOLF_CONFIG": "/anvil/projects/x-mcb130189/aklein/BICAN/fish_supp/.config.ini",
+    "ZARR_STORAGE_PATH": "/home/x-aklein2/projects/aklein/merscope_support/data/zarr_store",
+    "PROCESSED_ROOT_PATH": "/anvil/scratch/x-aklein2/GLIA",
+    "SEGMENTATION_OUT_PATH": "/home/x-aklein2/projects/aklein/merscope_support/data/segmented",
+    "ANNDATA_STORE_PATH": "/home/x-aklein2/projects/aklein/merscope_support/data/aggregated",
+    "ANNOTATION_STORE_PATH": "/home/x-aklein2/projects/aklein/merscope_support/data/annotated",
+    "IMAGE_STORE_PATH": "/home/x-aklein2/projects/aklein/merscope_support/data/images",
+    "CUTOFFS_PATH": "/home/x-aklein2/projects/aklein/merscope_support/glia/segmentation/filtering_cutoffs.json"
+}

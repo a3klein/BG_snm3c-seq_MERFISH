@@ -1,0 +1,44 @@
+# Ignoring big files related to the data formats or the annotation execute directories
+
+# Large Data Files / Images
+data/
+images/
+
+# any execute files: 
+**/execute/
+annotation/template/integration
+
+# analysis that did not make it to the paper
+ldsc/
+browser/
+ve_analysis/
+
+# Internal log files:
+/logs
+**/lightning_logs/
+**/.ipynb_checkpoints
+
+# From templtes: 
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+.Python
+build/
+dist/
+lib/
+lib64/
+wheels/
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.cache/
+.pixi
+.env
+.venv
+env/
+venv/
+.vscode/
+.ruff_cache/

@@ -1,0 +1,27 @@
+#!/bin/bash
+# FILENAME: start_script.sh
+# DESCRIPTION: This script loads the spatialdata object for a given sample
+
+#SBATCH -A mcb130189
+#SBATCH -J start_PU_region_UCI2424
+#SBATCH -p wholenode
+#SBATCH -t 00:20:00
+#SBATCH --nodes=1
+#SBATCH -o /home/x-aklein2/projects/aklein/BICAN/BG/logs/PU/start_PU_region_UCI2424.out
+#SBATCH -e /home/x-aklein2/projects/aklein/BICAN/BG/logs/PU/start_PU_region_UCI2424.out
+
+# Load the necessary modules
+module load modtree/cpu
+module list 
+
+export PATH="/home/x-aklein2/.pixi/bin:$PATH"
+
+cd /anvil/projects/x-mcb130189/aklein/SPIDA
+echo "Setting up .zarr file for region region_UCI2424 of experiment PU"
+
+
+pixi run -e preprocessing \
+    python -m spida.S ingest-region \
+    202506151211_BICAN-4x1-PU-01_VMSC31910 \
+    region_UCI2424 \
+    --plot
